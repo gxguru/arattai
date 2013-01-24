@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}domtab.css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<script type="text/javascript" src="{{ STATIC_URL }}domtab.js"></script>
+
+	<script type="text/javascript">
+		document.write('<style type="text/css">');    
+		document.write('div.domtab div{display:none;}<');
+		document.write('/s'+'tyle>');    
+    </script>
+
+</head>
+<body>
+
+<h1><a name="top" id="top">{{ username  }} forum</a></h1>
+<p id="domtabprintview"></p>
+
+<div class="domtab">
+  <ul class="domtabs">
+    <li><a href="#t1">All My posts</a></li>
+    <li><a href="#t2">Compose</a></li>
+  </ul>
+  <div>
+    <h2><a name="t1" id="t1">My Blog</a></h2>
+    <p>Test to prove that more than one menu is possible</p>
+    <p><a href="#top">back to menu</a></p>
+  </div>
+  <div>
+    <h2><a name="t2" id="t2">Compose</a></h2>
+    <p> {% include "edit.html" %} </p>
+    <p><a href="#top">back to menu</a></p>
+  </div>
+</body>
+</html>

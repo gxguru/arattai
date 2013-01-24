@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{%block title %} {{page_name}} editing {% endblock %}
+{%block content %} 
+<form method=post action="/arattai/{{blog_name}}/save">
+{% csrf_token %}
+<p>
+   <label for="blog_name">Blog Name<br/>
+   <input type="text" id="blog_name" name="blog_name" value="{{ blog_name }}" size="20" /></label>
+</p>
+<p>
+<textarea name="content" rows=20 cols=60>{{content}}
+</textarea>
+<br/>
+</p>
+<p>
+<input type="submit" value="post"/>
+</p>
+</form>
+{% endblock %}

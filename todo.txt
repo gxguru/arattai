@@ -1,0 +1,5 @@
+1. Pull all the blogs written by that person in the MyBlogs tab.
+
+2. Create 3 tabs for the following (Latest Blogs, Myblogs, new blog)
+
+

@@ -1,0 +1,60 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>arattai</title>
+  <link href="{{ STATIC_URL }}arattai.png" rel="icon" type="image/png" />
+
+<link href="{{ STATIC_URL  }}litmus.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="external">
+
+<div id="main">
+
+<form accept-charset="UTF-8" action="/arattai/register/" id="login-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+{% csrf_token %}
+<p><label for="email">Email Address</label>
+<input id="email" name="email" tabindex="1" type="text" /></p>
+<script>document.getElementById("email").focus();</script>
+
+<p><label for="first_name">First Name</label>
+<input id="first_name" name="first_name" tabindex="2" type="text" /></p>
+
+<p><label for="last_name">Last Names</label>
+<input id="last_name" name="last_name" tabindex="3" type="text" /></p>
+
+<p><label for="username">Choose a User Name</label>
+<input id="username" name="username" tabindex="4" type="text" /></p>
+
+<p class="password"><label for="password">Password</label>
+  <input id="password" name="password" tabindex="5" type="password" value="" />
+
+<p><input id="loginBtn" name="commit" tabindex="6" type="submit" value="Register" /></p>
+
+</form>
+</div><!-- #main -->
+
+<div id="footer">
+  <ul>
+    <li class="last"><a href="mailto:gxguru@gmail.com">Contact</a></li>
+  </ul>
+</div><!-- #footer -->
+
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f19488f844d52135c000005');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+    
+</body>
+</html>
+

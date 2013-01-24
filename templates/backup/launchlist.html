@@ -1,0 +1,668 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8" /> 
+
+<title> 
+Launchlist Pro - The ultimate website checklist application.
+</title> 
+ 
+<meta name="description" content="Launchlist - Your one stop website checklist." /> 
+<meta name="keywords" content="Launchlist, website, checklist, evaluate, launch, check, website check, website checklist" /> 
+<meta name="author" content="Collapps" /> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+ 
+<!-- Favicon --> 
+<link rel="shortcut icon" href="/favicon.ico" /> 
+ 
+<!-- CSS --> 
+
+<link rel="stylesheet" href="/public/style/reset.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="/public/style/style.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="/public/fancybox/jquery.fancybox-1.3.1.css" media="screen,projection" type="text/css" />
+
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+<!--[if lte IE 7]><script src="/public/js/browser_upgrade_notification.js"></script><![endif]-->
+ 
+<script type="text/javascript" src="/public/js/jquery-1.4.2.min.js"></script> 
+<script type="text/javascript" src="/public/fancybox/jquery.fancybox-1.3.1.pack.js"></script> 
+<script type="text/javascript" src="/public/js/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="/public/js/jquery.hoverIntent.minified.js"></script> 
+<script type="text/javascript" src="/public/js/functions.js"></script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9648109-16']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+</head> 
+ 
+<body id="sign-up"> 
+
+
+<noscript><p>Looks like you have Javascript disabled, you must enable it to use this website properly.</p></noscript> 
+
+<header>
+	<h1><a href="/">Launchlist Pro - Website Checklist Application</a></h1>
+	
+	<nav>
+	<ul>
+		<li><a href="/" title="Home">Home</a></li>
+		<li><a href="/tour" title="Tour">Tour</a></li>
+		<li><a href="/blog" title="Blog">Blog</a></li>
+		<li><a class="active" href="/sign-up" title="Sign Up">Sign Up</a></li>
+		<li><a href="#" title="Login" id="login-btn">Login</a></li>
+	</ul>
+	</nav>
+	</header> 
+
+
+
+<section id="container">
+
+	
+
+	<header>	
+
+	
+
+		<h1>Start your 30 day free trial right now.</h1>
+
+		<h2>Choose your plan and prepare for liftoff.</h2>
+
+		
+
+		<div id="plans">
+
+			<div class="plan astronaut ">
+
+				<h3>Astronaut</h3>
+
+				<img src="/public/art/astronaut.png" alt="Astronaut plan" />
+
+				
+
+				<div class="plan-content">
+
+				<h4><strong>$5</strong>/Month</h4>
+
+				<p>Perfect for freelancers and contractors</p>
+
+				<ul>
+
+					<li class="users"><strong>Single</strong> user account</li>
+
+					<li class="lists">Up to <strong>3 active checklists</strong></li>
+
+					<li class="templates">Set up to <strong>5 templates</strong></li>
+
+				</ul>
+
+				
+
+				<a href="#" id="Astronaut-link" title="Choose the Astronaut plan">Choose this plan</a>
+
+				</div><!-- plan-content -->
+
+			</div><!-- plan -->
+
+			<div class="plan rocketship chosen">
+
+				<h3>Rocketship</h3> 
+
+				<img src="/public/art/rocketship.png" alt="Rocketship plan" />
+
+				
+
+				<div class="plan-content">
+
+				<h4><strong>$15</strong>/Month</h4>
+
+				<p>Suitable for small - medium teams</p>
+
+				<ul>
+
+					<li class="users"><strong>10 users</strong></li>
+
+					<li class="lists">Up to <strong>15 active checklists</strong></li>
+
+					<li class="templates">Set up to <strong>10 templates</strong></li>
+
+				</ul>
+
+				
+
+				<a href="#" id="Rocketship-link" title="Choose the Rocketship plan">Choose this plan</a>
+
+				</div><!-- plan-content -->
+
+			</div><!-- plan -->
+
+			<div class="plan planetoid ">
+
+				<h3>Planetoid</h3>
+
+				<img src="/public/art/planet.png" alt="Planetoid plan" />
+
+				
+
+				<div class="plan-content">
+
+				<h4><strong>$30</strong>/Month</h4>
+
+				<p>Large business and enterprise</p>
+
+				<ul>
+
+					<li class="users"><strong>Unlimited</strong> user accounts</li>
+
+					<li class="lists">Unlimited<strong> active checklists</strong></li>
+
+					<li class="templates">Set up to <strong>100 templates</strong></li>
+
+				</ul>
+
+				
+
+				<a href="#" id="Planetoid-link" title="Choose the Planetoid plan">Choose this plan</a>
+
+				</div><!-- plan-content -->
+
+			</div><!-- plan -->
+
+		</div>
+
+		
+
+		<div id="clouds"></div>
+
+	
+
+	</header>
+
+	
+
+	<section id="content">
+
+		<div id="wrapper">
+
+			<div id="faqs">
+
+				<article class="left">
+
+				<h1>Do I need to register to use Launchlist?</h1>
+
+				<p>Nope.  We have a free version of the app available at <a href="http://lite.launchlist.net" title="Launchlist Lite">http://lite.launchlist.net</a> that you can use any time.  If you want to take advantage of the full features of Launchlist, such as creating and saving lists, using templates and inviting other users you will need to sign up for a pro account.  All accounts come with a 30-day free trial and we will never charge your account until the trial period has ended.</p>
+
+				</article>
+
+				<article class="right">
+
+				<h1>What are active checklists and templates?</h1>
+
+				<p>Active checklists represent the ongoing projects that you're testing and haven't yet launched, whereas archived checklists are those which you've launched and/or closed. You're free to move checklists from active to archived (and vice versa) as you like.  Templates are used to set up common lists for testing similar projects - from brochure sites to email newsletters.</p>
+
+				
+
+				</article>
+
+				<article class="left clear">
+
+				<h1>What forms of payment do you accept?</h1>
+
+				<p>We currently process all accounts through Paypal and accept all of the forms of payment that they allow - Mastercard, Visa, debit cards or even your bank. We do intend to offer credit card processing directly through the application at a later date.</p>
+
+				</article>
+
+				<article class="right">
+
+				<h1>Can I change plans? Is there a contract?</h1>
+
+				<p>You're free to change plans at any time within the account screen of the application.  Launchlist is a pay-as-you-go service and at no time will you have to have to commit to a contract. If you cancel your account you'll be billed for the current month, but you won't be billed again.</p>
+
+				</article>
+
+				
+
+				<div class="clear"></div>
+
+			</div>
+
+			
+
+			<div id="sign-up-content">
+
+				<div id="sign-up-info" class="Rocketship">
+
+			
+
+					<h2>Register your <span>Rocketship</span> Account</h2>
+
+					<p>Thanks for choosing Launchlist.  By signing up to a pro account you'll get 30 days to use the service at no charge.  If you don't want to continue using the app, just cancel your account at any time within this period and you won't be charged (we'll even email you before the trial period ends to remind you). You're free to upgrade, downgrade or cancel your account at anytime.</p>
+
+
+
+					<p><strong>Your site address</strong></p>
+
+
+
+					<p>Your site address is the URL that you'll use to login and access your account - choose wisely, as this cannot be changed.  Only letters and numbers accepted</p>
+
+
+
+					<p><strong>Why do you need my payment details?</strong></p>
+
+
+
+					<p>We use your payment details to reduce fraud, verify you have a valid method of payment and to save time at a later date should you choose to continue using the service.</p>
+
+			
+
+				</div>
+
+				
+
+				
+
+				
+
+				
+
+				<form id="register" action="http://launchlist.net/sign-up" method="post">
+
+				
+
+									
+
+					<h2>1. <strong>Add your details</strong></h2>
+
+					
+
+					<fieldset>
+
+						<div class="field">
+
+							<label for="username">Username</label>
+
+							<input class="required" type="text" id="username" name="username" value="" />
+
+						</div>
+
+						<div class="field">
+
+							<label for="email">Email Address</label>
+
+							<input class="required" type="text" id="email" name="email" value="" />
+
+						</div>
+
+						<div class="field clear">
+
+							<label for="password">Password</label>
+
+							<input class="required" type="password" id="password" name="password" value="" />
+
+						</div>
+
+						<div class="field">
+
+							<label for="retype_password">Confirm Password</label>
+
+							<input class="required" type="password" id="retype_password" name="retype_password" value="" />
+
+						</div>
+
+					
+
+					</fieldset>
+
+					
+
+	
+
+            
+
+					
+
+					<h2>2. <strong>Choose your Launchlist site address</strong></h2>
+
+					
+
+					<fieldset>
+
+						<div class="field site-address">
+
+							<label for="account_name">http://</label>
+
+							<input class="required" type="text" id="account_name" name="account_name" value="" />
+
+							<label for="account_name">.launchlist.net</label>
+
+							<img id="site-address-loading" style="display: none;" style="padding: 5px;" src="/public/art/loading.gif" alt="Checking subdomain availability" />
+
+							<img id="site-address-tick" style="display: none;" src="/public/art/tick.png" alt="Subdomain available" />
+
+							<img id="site-address-cross" style="display: none;" src="/public/art/cross.png" alt="Subdomain not available" />
+
+							<p id="site-address-notice" >Subdomain is not available, please try an alternative site address.</p>
+
+						</div>
+
+					
+
+					</fieldset>
+
+					
+
+					<fieldset style="display: none;">
+
+						<label for="plan">Plan Type:</label>
+
+						<select id="plan" name="plan">
+
+			                <option value="Astronaut" >Astronaut</option><option value="Rocketship" >Rocketship</option><option value="Planetoid" >Planetoid</option>	
+
+			            </select>
+
+						
+
+		            </fieldset>
+
+					
+
+					<h2>3. <strong>Proceed to billing</strong></h2>
+
+					
+
+					<fieldset>
+
+						<div class="field coupon-code">
+
+							<label for="coupon_code">Coupon code</label>
+
+							<input type="text" id="coupon_code" name="coupon_code" value="" />
+
+						</div>
+
+					
+
+					</fieldset>
+
+					
+
+					<div id="terms-agree">
+
+						<input class="required" type="checkbox" id="terms" name="terms" />
+
+						<label for="terms">I've read and agree to the Launchlist <a target="_blank" href="/terms-of-service" title="Launchlist Terms of Service">Terms of Service</a> and <a target="_blank" href="/privacy" title="Privacy Policy">Privacy Policy</a>.</label>
+
+					</div>
+
+					
+
+					<button type="submit" name="submit_register" value="Register">Proceed to billing setup</button>
+
+					<img src="/public/art/paypal.png" alt="Registrations managed through Paypal" id="paypal" />
+
+					
+
+					<p>You will be directed to Paypal to complete your registration.</p>
+
+					
+
+				
+
+				</form>
+
+				
+
+								
+
+				<div class="clear"></div>
+
+			
+
+			</div>
+
+		</div><!-- sign-up-wrapper -->
+
+
+
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$(".plan.astronaut, .plan.planetoid").fadeTo('100',.75);
+
+		});
+
+		</script>
+
+			<div id="logo-top"><span></span></div>
+
+		<div id="content-left"></div>
+
+		<div id="content-right"></div>
+
+	</section>
+
+		<footer>
+
+	
+
+		<h1 id="lite">Or, try Launchlist Lite for free (always).</h1>
+
+		
+
+		<a href="http://lite.launchlist.net" title="Let's go Launchin' - Try Launchlist Lite" id="launchin-btn">Let's go Launchin' - Try Launchlist Lite</a>
+
+	</footer>
+
+	
+
+		
+
+
+
+
+
+</section><!-- container -->
+
+
+
+<footer>
+
+
+
+	<div id="copyright">
+
+		<p>&copy; 2012  <a href="http://launchlist.net" title="Launchlist pre-launch website checklist app">Launchlist</a> |  
+
+		
+
+		<a href="http://getsatisfaction.com/launchlist/" title="Support">Support</a>  |  
+
+<a href="/privacy" title="Privacy Policy">Privacy Policy</a>  |  
+
+<a href="/terms-of-service" title="Terms of Service">Terms of Service</a>  |  
+
+<a href="/blog" title="Launchlist Blog">Blog</a>  |  
+
+<a href="http://www.twitter.com/launchlistapp" title="Twitter">Twitter</a> |
+
+<a href="/contact" title="Contact">Contact</a>		</p>
+
+	</div>
+
+	
+
+	<div id="credits">
+
+		<p>Hand-crafted by</p> <a href="http://collap.ps" title="Collapps - Collaborative apps for web people" id="collapps-logo">Collapps - Collaborative apps for web people</a>
+
+	</div>
+
+	
+
+	<div class="clear"></div>
+
+
+
+</footer>
+
+
+
+<div id="login" style="display: none;">
+
+
+
+	<div id="login-inner">
+
+			<h2>Logging in to Launchlist</h2>
+
+	
+
+		<div class="content left">
+
+			<p>When registering with Launchlist you'll nominate a Launchlist site address which will form the subdomain for logging in to your account.  Once your account has been activated you'll also get sent an email confirmation.</p>
+
+			
+
+			<p>Your site address will look something like this:</p>
+
+			
+
+			<h3>http://<strong>yoursiteaddress</strong>.launchlist.net</h3>
+
+			<p>Just pop your this into your browser or enter your site address on the right.</p>
+
+			
+
+		</div>
+
+	
+
+	
+
+		<div class="content right">
+
+	
+
+			<form action="redirect-to-subdomain.php" method="post">
+
+				<label for="site-address">Enter your site address</label>
+
+				<input type="text" id="site-address" name="site-address" />
+
+				
+
+				<button type="submit">Let's Go</button>
+
+				
+
+			</form>
+
+			
+
+			<p>If you've forgotten your site address and can't track down the confirmation email just <a href="/contact" title="Contact Us">send us an email</a> and we'll be happy to help!</p>
+
+		
+
+		</div>
+
+	
+
+		<a href="#" title="Close" id="close">Close</a>
+
+	</div>
+
+</div>
+
+
+
+<script type="text/javascript" >
+
+
+
+	$(document).ready(function() {
+
+		function checkSiteAddress() {
+
+			
+
+			js_account_name = $( '#account_name' ).attr( 'value' );
+
+			
+
+			query_string = 'js_account_name=' + js_account_name;
+
+			
+
+			$.ajax({
+
+				type: "POST",
+
+				dataType: 'text',
+
+				url: "http://launchlist.net/check-site-address.php",
+
+				data: query_string,
+
+				success: function(data){
+
+					if ( data == 'false' ) {
+
+						$( '#site-address-loading' ).css('display', 'none');
+
+						$( '#site-address-tick' ).css('display', 'inline');
+
+						$( '#site-address-cross' ).css('display', 'none');
+
+						$( '#site-address-notice' ).css('display', 'none');
+
+					} else {
+
+						$( '#site-address-loading' ).css('display', 'none');
+
+						$( '#site-address-tick' ).css('display', 'none');
+
+						$( '#site-address-cross' ).css('display', 'inline');
+
+						$( '#site-address-notice' ).css('display', 'block');
+
+					}
+
+				}
+
+			});
+
+		}
+
+		$('#account_name').keyup(function() {
+
+			checkSiteAddress();
+
+		});
+
+	});
+
+	
+
+</script>
+
+
+
+</body>
+
+</html>		
+
+

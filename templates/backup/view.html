@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load wikilink %}
+{%block title %} {{page_name}} {% endblock %}
+{%block content %} <h1>{{page_name|escape}}</h1>
+<br/>
+{{content|wikify}}
+<br/>
+<hr>
+To Edit the page click <a href='/mywiki/{{page_name}}/edit'>here</a>
+{% endblock %}

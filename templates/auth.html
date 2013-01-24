@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<STYLE type="text/css">
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #333;
+    padding: 0; }
+span { 
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; }
+.outer {
+    width: 800px;
+    height: 200px;
+    padding: 10;
+    border: 1px solid #000;
+    background: #669;
+    vertical-align: middle;
+    text-align: center; 
+
+    display: inline-block; }
+</STYLE>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<title>Log in</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style>
+body{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+</style>
+</head>
+<body>
+<p align=center style="color: #FF0000; font-size: 14pt">{{state}}</p>	
+	<form action="/arattai/" method="post">
+                 {% csrf_token %}
+		{% if next %}
+		<input type="hidden" name="next" value="{{ next }}" />
+		{% endif %}
+		<span></span><div class="outer" text-align=center>
+		<h2 align=middle>Login Page</h2>
+		UserName:   <input type="text" id='user_login' name="username" value="{{ username }}" /><br /><br />
+		Password :   <input type="password" name="password" value="" /><br />
+		<input type="submit" value="Log In" />
+ <p id="nav">
+     <a href="/arattai/lostpassword/" title="Password Lost and Found">Lost your password?</a>
+ </p>
+ <p id="nav">
+     <a href="/arattai/register/" title="New User Register">Register</a>
+ </p>
+		</div>
+	</form>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+	
+</body>
+</html>
